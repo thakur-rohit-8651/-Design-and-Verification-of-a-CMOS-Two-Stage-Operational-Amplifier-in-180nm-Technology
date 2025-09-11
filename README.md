@@ -1,0 +1,2 @@
+# -Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology
+Designed a CMOS two-stage op-amp with 60 dB DC gain, 30 MHz GBW, 60° phase margin, 20 V/μs slew rate, input range 0.8–1.6 V, and &lt;300 μW power. Optimized transistor W/L ratios for 8 MOSFETs. Implemented in Cadence Virtuoso (180nm CMOS). Validated via AC/transient simulations with 2 pF load, ensuring stable low-power operation.
