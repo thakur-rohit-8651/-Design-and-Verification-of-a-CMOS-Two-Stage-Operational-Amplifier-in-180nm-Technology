@@ -88,42 +88,16 @@ The current flowing from M6 will be same as the one flowing from M7. Als, M7 wil
 
 Now we have all the W/L ratios of the transistors for the circuit we were aiming to build. When designed in cadence and plotted AC response by doing AC analysis we got following result.
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Schematic%20without%20nulling%20resistor.jpg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/cadence%20schematic.jpeg" />
 </p>
 
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Plot%20Without%20Nulling%20Resistor.jpg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/bode%20plot.jpeg" />
 </p>
 
 From the frequency response we can see that the phase margin that we got with this configuration is not what we expected. It is significantly low and we need make changes in the circuit.
 
-## 8.Design of nulling resistor and its bias circuitary transistors.
-As seen above, we did not get the required phase margin and we deciced to put the nulling resistor in series with the compensation capcitor. This can be implemented by using an ideal resistor but it is always a good pratice to try to design everything using MOS when designing IC. Based on the observed common mode signal at the output it is recommended to use a PMOS device (M8) to implement this resistor. The gate voltage for this PMOS can be anything which will make sure that it is turned on (even though there will not be any DC current flowing through it because of the capcitor in series). If we make this gate voltage fixed then this topology will work only for fixed load. To make it 'programmable' for any loads following arrangement can be made.
-The following diagram also follows the calculations of aspect ratios of newly added transistors to the system (M8, M9, M10, M11)
 
-<p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/4.jpg" />
-</p>
-<p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/5.jpg" />
-</p>
----
-
-Once this is done, I made the corresponding changes in the previous circuit in cadence and simulated it.
-<p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Schematic%20After%20inserting%20Nulling%20resistor.jpg" />
-</p>
-
-From above image, we can see that all the transistors are in saturation region which proves that we are going in right direction. After this I plotted the AC reponse of the circuit as shown below.
-<p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Response%20after%20inserting%20nulling%20resistor.jpg" />
-</p>
-
-We can clearly see that the new __phase margin we got is 82 degree__ which is very excellent. The DC gain of the circuit is __Av(0)=Adm=65.57db__. Also the gain bandwidth is __GBW = 24MHz__.
-
-I this way out OPAMP designing part is done. Now we have to test this OPAMP in various configuration to see if it is meeting other required specifications or not.
-
-This procedure proceeds as follows:
 ### 1. Calculation of Common Mode Rejection Ratio (CMRR)
 We know that __CMRR(dB) = Adm(dB) - Acm(dB)__. We already have the value of Adm = 65.57dB. We now need to calculate the commo mode gain. This can calculated by doing following setup. Here I have given a common mode signal at the output and I have plotted a frequency response.
 <p align="center">
