@@ -56,35 +56,33 @@ Now, SR = I5/Cc. From this we can calculate **I5 = SR x Cc = 20μA**.
 
 ## 4. Design of input transistors M1 and M2.
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%202.jpg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/s1%20and%20s2.jpeg" />
 </p>
 
 ## 5. Design of mirror load transistors and tail current source transistor for first stage(M3, M4 and M5).
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%203.jpg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/s3%20and%20s4.jpeg" />
 </p>
 
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%204.jpg" />
+<img src = "[https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%204.jpg](https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/s5.jpeg)" />
 </p>
 
-Please keep a note that I have changed the sizes of input transistors from what we got initially. Therefore, the input transistor gm is also changed.
+
 
 
 ## 6. Design of second stage input transistor M6
 Key things to keep in mind while designing 2nd input stage is that, it should properly mirror the current from first stage (blancing) and it should be sized in such a way that the output pole will go beyond our frequency of interests so that it will not create any concerns for us while designing.
 
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%205a.jpg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/s6.jpeg" />
 </p>
-<p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%205b.jpg" />
-</p>
+
 
 ## 7. Design of current source transistor for second stage M7.
 The current flowing from M6 will be same as the one flowing from M7. Als, M7 will form mirror with M5. Hench keeping that in mind, we have to size M7. Normally, S7 = 1/2x(S6)
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%206.jpg" />
+<img src = "[https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Step%206.jpg](https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/s7.jpeg)" />
 </p>
 ---
 
