@@ -51,7 +51,7 @@ We have target Slew rate and given Load capacitor CL in the specification. We al
 The condition for 60 degree phase margin is Cc>=0.22xCL Hence, for our project Cc should be more than or equal to 2.2pF. I am choosing value of Cc to **Cc = 800 fF**
 Now, SR = I5/Cc. From this we can calculate **I5 = SR x Cc = 20μA**.
 <p align="center">
-<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/WhatsApp%20Image%202025-11-14%20at%2000.50.16.jpeg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/compensation.jpeg" />
 </p>
 
 ## 4. Design of input transistors M1 and M2.
