@@ -44,7 +44,7 @@ Now that we have the required unknowns, we can proceed to design stpes.
 The initial circuit for the system will be as shown below. I will make changes if thensystem doesn't meet the requred specifications.
 
 <p align="center">
-<img src = "https://github.com/akash10295/Design-of-two-stage-fully-compensated-OPAMP/blob/master/Screenshots/Without%20nulling%20resistor.jpg" />
+<img src = "https://github.com/thakur-rohit-8651/-Design-and-Verification-of-a-CMOS-Two-Stage-Operational-Amplifier-in-180nm-Technology/blob/main/WhatsApp%20Image%202025-11-14%20at%2000.50.16.jpeg" />
 </p>
 
 We have target Slew rate and given Load capacitor CL in the specification. We also have the target of Phase margin > 60 degree.
